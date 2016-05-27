@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/service_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@mipmap/service_bg" />
+
+    <TextView
+        android:id="@+id/service_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/service_image"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#333333"
+        android:text="好吃的大米"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/coin_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:text="50爱心币"
+        android:layout_below="@id/service_name"
+        android:layout_toRightOf="@id/service_image"/>
+
+
+
+    <Button
+        android:id="@+id/exchange"
+        android:layout_width="64dp"
+        android:layout_height="36dp"
+        android:textSize="14sp"
+        android:text="兑换"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_askmsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_bg3"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.ehelp.ehelp.util.CircleImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@mipmap/head"
+                        app:border_color="@color/white"
+                        app:border_width="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_nickname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text=""
+                                android:textColor="@color/blue"
+                                android:textSize="18sp" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:id="@+id/iv_delete"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:background="@mipmap/trashbin"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="2dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp">
+                        <ImageView
+                            android:id="@+id/iv_coin"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/coin0"
+                            android:layout_margin="3dp"/>
+                        <TextView
+                            android:id="@+id/tv_coinnum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.ehelp.ehelp.util.NoScrollListView
+                android:id="@+id/lv_askreply"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fastScrollEnabled="false"
+                android:scrollbars="none"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/squaremsg_framework3"
+        android:divider="@drawable/divider3"
+        android:dividerPadding="5dp"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/layout_thumb"
+            android:background="@drawable/item_selector2">
+            <CheckBox
+                android:id="@+id/cb_thumb"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/checkbox_selector3"
+                android:button="@null"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/tv_concern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="关注"
+                android:textColor="@color/gray2"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_thumbnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingBottom="1dp"
+                android:text="8"
+                android:textColor="@color/gray"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/layout_response"
+            android:background="@drawable/item_selector2">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/reply" />
+
+            <TextView
+                android:id="@+id/tv_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="回答"
+                android:textColor="@color/gray2"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_replynum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingBottom="1dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout_editreply"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/gray_bg2"-->
+        <!--android:gravity="center_vertical">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/et_reply"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:cursorVisible="true"-->
+            <!--android:hint="我也来回答..."-->
+            <!--android:maxLines="4"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textCursorDrawable="@null"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_send"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_marginBottom="4dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:background="@drawable/btn_selector2"-->
+            <!--android:text="@string/send"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="12sp" />-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:background="@mipmap/logo" />
+
+        <LinearLayout
+            android:id="@+id/layout_input"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/iv_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/btn_bg1"
+            >
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:hint="手机号码"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/et_pw"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_selector3"
+            android:onClick="onClick"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_forgetpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:onClick="onClick"
+            android:text="忘记密码"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:onClick="onClick"
+            android:text="注册"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

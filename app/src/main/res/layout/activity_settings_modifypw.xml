@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/accountnow"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/pwnow"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/et_pw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/newpw"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/et_newpw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/confirmpw"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/et_confirmpw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>

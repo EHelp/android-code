@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/usermsg_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="修改头像"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector2"
+        android:clickable="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:text="选择本地图片"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background" />
+
+    <TextView
+        android:id="@+id/tv_takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector2"
+        android:clickable="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:text="拍照"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/background"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center">-->
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/btn_cancel"-->
+            <!--android:text="@string/cancel"-->
+            <!--android:background="@drawable/btn_selector1"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:layout_marginLeft="50dp"/>-->
+
+    <!--</LinearLayout>-->
+</LinearLayout>

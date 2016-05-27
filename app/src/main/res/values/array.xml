@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="occupations">
+        <item>医生</item>
+        <item>保安</item>
+        <item>警察</item>
+        <item>学生</item>
+        <item>教师</item>
+        <item>工程师</item>
+        <item>白领</item>
+        <item>工人</item>
+        <item>无业游民</item>
+        <item>其他</item>
+    </string-array>
+</resources>

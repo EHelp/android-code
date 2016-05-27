@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="?attr/colorPrimary"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/ToolbarStyle"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_navigationIcon_layout"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:layout_gravity="left|center_vertical"
+        android:gravity="center"
+        android:background="@null">
+
+        <Button
+            android:id="@+id/toolbar_navigationIcon"
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            android:background="@drawable/backicon_selector" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="易助"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar_icon_layout"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:layout_gravity="right|center_vertical"
+        android:gravity="center"
+        android:background="@null">
+        <Button
+            android:id="@+id/toolbar_icon"
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            android:background="@null"/>
+        <TextView
+            android:id="@+id/tv_msgnum"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/circle_red_bg"
+            android:textColor="@color/white"
+            android:text="10"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

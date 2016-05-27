@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:id="@+id/layout_sponsorask">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:hint="在这里写下您的回答..."
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray2"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:gravity="top"
+        android:id="@+id/et_reply"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"/>
+
+</LinearLayout>

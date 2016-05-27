@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+
+    dexOptions {
+        preDexLibraries = false
+    }
+
+    defaultConfig {
+        applicationId "com.ehelp.ehelp"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        release {
+            storeFile file("./ehelp.jks")
+            storePassword "ss2015ehelp?"
+            keyAlias "ehelp"
+            keyPassword "ss2015ehelp?"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.liulishuo.magicprogresswidget:library:1.0.2'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile('com.github.afollestad.material-dialogs:core:0.8.5.3@aar') { transitive = true }
+    compile files('libs/AMap_3DMap_v2.6.0_20150914.jar')
+    compile files('libs/Xg_sdk_v2.39_20150915_1121.jar')
+    compile files('libs/AMap_Location_v2.0.0_20151117.jar')
+    compile files('libs/AMap_ Navi_v1.5.0_20151119.jar')
+    compile files('libs/AMap_Android_3DMapSDK_V3.1.0_20151124.jar')
+    compile files('libs/MobLogCollector.jar')
+    compile files('libs/MobTools.jar')
+    compile files('libs/SMSSDK-1.3.1.jar')
+}

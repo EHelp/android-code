@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@drawable/item_selector2"
+    android:id="@+id/layout_helpermsg">
+
+    <com.ehelp.ehelp.util.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/head"
+        app:border_color="@color/white"
+        app:border_width="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_nickname2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textColor="@color/gray2"
+                android:textSize="16sp"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:id="@+id/iv_sex"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/male"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_realname2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="真实姓名"
+                android:textColor="@color/gray2"
+                android:textSize="16sp"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/tv_realname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_creditvalue2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="信誉等级"
+                android:textColor="@color/gray2"
+                android:textSize="16sp"
+                android:gravity="right"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="19dp"
+                android:id="@+id/iv_creditlevel"
+                android:src="@mipmap/creditlevel0"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_responsetime2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="响应求助时间"
+                android:textColor="@color/gray2"
+                android:textSize="16sp"
+                android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/tv_responsetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:src="@mipmap/right"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

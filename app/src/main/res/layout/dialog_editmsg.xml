@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/usermsg_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="修改用户名"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/title"
+        />
+
+    <EditText
+        android:id="@+id/edit_msg"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_bg1"
+        android:textCursorDrawable="@null"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:id="@+id/confirm_btn"
+            android:text="@string/confirm"
+            android:background="@drawable/btn_selector3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:id="@+id/cancel_btn"
+            android:text="@string/cancel"
+            android:background="@drawable/btn_selector1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>

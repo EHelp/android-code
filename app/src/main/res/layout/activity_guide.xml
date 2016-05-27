@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:id="@+id/vflp_help"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@anim/right_in"
+        android:outAnimation="@anim/right_out"
+        android:flipInterval="3000">
+
+        <include layout="@layout/guidepage_1" />
+
+        <include layout="@layout/guidepage_2" />
+
+        <include layout="@layout/guidepage_3" />
+
+        <include layout="@layout/guidepage_4" />
+
+    </ViewFlipper>
+
+    <ImageView
+        android:id="@+id/iv_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/navigation1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"/>
+
+</RelativeLayout>

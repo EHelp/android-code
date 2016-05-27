@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/usermsg_bg">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="修改职业"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector2"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="医生"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background" />
+
+            <TextView
+                android:id="@+id/tv_security"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector2"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="保安"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background" />
+
+            <TextView
+                android:id="@+id/tv_policeman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector2"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="警察"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background" />
+
+            <TextView
+                android:id="@+id/tv_student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector2"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="学生"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background" />
+
+            <TextView
+                android:id="@+id/tv_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector2"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="教师"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background" />
+
+            <TextView
+                android:id="@+id/tv_engineer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector2"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="工程师"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background" />
+
+            <TextView
+                android:id="@+id/tv_whitecollar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector2"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="白领"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background" />
+
+            <TextView
+                android:id="@+id/tv_worker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector2"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="工人"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background" />
+
+            <TextView
+                android:id="@+id/tv_hobo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector2"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="无业游民"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background" />
+
+            <TextView
+                android:id="@+id/tv_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/item_selector2"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="其他"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

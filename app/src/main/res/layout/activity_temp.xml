@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <!--
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1">
+
+               <ImageView
+                   android:id="@+id/personal_account"
+                   android:layout_width="128dp"
+                   android:layout_height="128dp"
+                   android:src="@mipmap/personalAccount"
+                   android:layout_centerHorizontal="true"
+
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/personal_account"
+                   android:textSize="25sp"
+                   android:text="个人账户"
+                   />
+
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1">
+
+           </RelativeLayout>
+
+
+
+       </LinearLayout>
+       -->
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="本功能尚未开发完成，敬请期待下一版本!"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

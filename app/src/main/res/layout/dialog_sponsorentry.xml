@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:id="@+id/layout_popup">
+
+    <LinearLayout
+        android:id="@+id/layout_sponsorask"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_selector3"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:clickable="true">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/ask"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ask"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_sponsorhelp"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_selector3"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:clickable="true">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/help"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温馨提示：长按加号键发起求救"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="15dp"/>
+    
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:clickable="true"
+        android:background="@drawable/item_selector2"/>
+    
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/usermsg_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="修改性别"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_male"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector2"
+        android:clickable="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:text="男"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background" />
+
+    <TextView
+        android:id="@+id/tv_female"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector2"
+        android:clickable="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:text="女"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

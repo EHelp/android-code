@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_title1"
+                    android:text="提问：基于社区生活的提问"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="        目前一些流行的咨询方式：百度知乎面向受众广，难以找到身边人解答；QQ微信聊天咨询回应不及时，问题容易被淹没；社区生活小问题求解无门。\n        易助起始阶段是基于社区的生活环境和场景，因此产品会营造出一个更加贴近社区居民生活的问题解答环境。提问具有区域性和时效性，有向地推送给身边的人能保证回应及时，针对性强，真实可靠。"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/askprocess"
+                    android:layout_marginTop="-10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【发出提问】：点击主页的绿色加号 -> 选择提问 -> 填写提问标题、内容、悬赏的爱心币 -> 点击右上角发送键"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_title2"
+                    android:text="求助：寻找身边的热心人"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="        在日常生活中经常会遇到许多不大不小的麻烦，专门请人做太费事，自己又很难搞定。将你的小困难发布到易助上，易助会在周边寻找可靠安全热心人来帮助你。"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/helpprocess"
+                    android:layout_marginTop="-10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【发出求助】：点击主页的绿色加号 -> 选择求助 -> 填写求助标题、内容、悬赏的爱心币 -> 点击右上角发送键"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_title3"
+                    android:text="求救：危险时的“一键助手”"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="        遭遇危险时，不方便拨打电话求救，亲朋警察难以第一时间赶来救援。按下易助“一键求助”，即刻向紧急联系人发送求救信息，并开启通话、录音、定位等功能，便于后续展开救援。甚至可以向身边的人发起求救，让离你更近的热心人帮助你。"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/sosprocess"
+                    android:layout_marginTop="-10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="【发出求救】：长按主页绿色的加号键 -> 5秒防误触缓冲期之后发出求救信息"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
